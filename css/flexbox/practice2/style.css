@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    min-height: 50px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar li img{
+    width:90px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.main-head{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    /* background-color: blue; */
+    background-image: url('https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGFja2VyfGVufDB8fDB8fHww&w=1000&q=80 ');
+    
+    /* background-image: url('https://media.wired.com/photos/59271004cefba457b079c01e/master/w_2560%2Cc_limit/white-gray-black-hat-hacker-158788611.jpg'); */
+
+    /* background-image: url('https://wallpapercrafter.com/sizes/1366x768/143604-hacking-black-background-binary.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.text h1{
+    color: white;
+}
+
+.text h3{
+    color: white;
+}
+.text p{
+    color: white;
+}
+
+.img img{
+    width: 200px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: pink; */
+    height: 100vh;
+}
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150px;
+    background-color: black;
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+    background-color: rgb(11,22,22);
+}
+.main-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 150px;
+}
+
+.link li a{
+    color: white;
+    list-style: circle;
+    font-size: 16px;
+    list-style: upper-alpha;
+    list-style-type: circle;
+}
+
+.subcribe{
+    width: 20%;
+}
+/* //////////////////////////// media query start ///////////////////////////////// */
+
+@media(min-width:800px)
+{
+    a{
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+.text h1
+{
+    font-size: 2rem;
+}
+
+.text h3
+{
+    font-size: 2rem;
+}
+
+.img img{
+    width: 250px;
+    height: 250px;
+}
+}
+
+
+@media(min-width:600px) and (max-width:800px)
+{
+    a{
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar li img{
+        width:70px;
+        height: 35px;
+        border-radius: 50%;
+    }
+
+    .text h1
+{
+    font-size: 1.3rem;
+}
+
+
+.text h3
+{
+    font-size: 1.3rem;
+}
+}
+
+
+@media(min-width:450px) and (max-width:600px)
+{
+    a{
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar li img{
+        width:60px;
+        height: 30px;
+        border-radius: 50%;
+    }
+ 
+    .text h1
+    {
+        font-size: 0.9rem;
+    }
+    
+    .img img{
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+    }
+    .text h3
+    {
+        font-size: 1rem;
+    }
+    .text p
+    {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:449px) 
+{
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        min-height: 80px;
+        background-color: black;
+    }
+
+    
+    a{
+        color: white;
+        background-color: rgb(11,22,22);
+        margin-top: 6px;
+        
+        font-weight: bold;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar li img{
+        width:60px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .text h1
+    {
+        font-size: 0.9rem;
+    }
+    
+    .img img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .text h3
+    {
+        font-size: 1rem;
+    }
+    .text p
+    {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <style>
+        .container
+        {
+            width: 100%;
+            height: 500px;
+            border: 2px solid black;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            align-items: stretch;
+
+        }
+
+        .class{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 2px solid red;
+            margin: 13px;
+            padding: 3px;
+
+        }
+
+        #item-1{
+            /* flex-grow: 3;
+            flex-shrink: 2; */
+            /* flex-basis: 300px; */
+            /* when row then width */
+            /* when column :  then height; */
+            order: 1;
+            align-self: center;
+        }
+
+        #item-2{
+            /* order: 2; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Box Lecture</h1>
+    <p>Flex box is a one-dimension layour that lays out the items into either row or column</p>
+    <p>display: flex;</p>
+    <p>flex-direction: row(default)/row-reverse/column/column-reverse</p>
+    <p>justify-content: center/flex-start/flex-end/space-around/space-between/space-evenly</p>
+    <p>flex-wrap: no-wrap(default)->this will not shrink./wrap</p>
+    <div class="container">
+        <div class="class" id="item-1">Box1</div>
+        <div class="class" id="item-2">Box 2</div>
+        <div class="class" id="item-3">Box 3</div>
+        <div class="class" id="item-4">Box 4</div>
+        <div class="class" id="item-5">Box 5</div>
+    </div>
+</body>
+</html>

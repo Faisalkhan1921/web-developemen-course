@@ -1,0 +1,340 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    background-color: brown;
+} */
+
+header::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+}
+nav{
+
+    display: flex;
+    min-height: 50px;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: black; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    flex-basis: 10%;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: pink; */
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 80%;
+    /* background-color: aqua; */
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: fantasy;
+    font-size: 15px;
+    padding: 20px;
+}
+
+.navbar li a:hover{
+    background-color: rgb(11, 22, 22);
+    border-radius: 20px;
+}
+#section1::before{
+    /* background-color: black; */
+    background-image: url('images/background.jpeg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 400px;
+}
+
+#section1 h1{
+    font-size: 2.5rem;
+    font-family: cursive;
+}
+
+#section1 p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: cursive;
+}
+
+.btn{
+    padding: 13px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    background-color: rgb(11, 22, 22);
+    color: white;
+
+}
+
+
+#section2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+}
+
+#section2 h1{ 
+text-align: center;
+text-decoration: underline;
+text-decoration-color: red;
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.section2-main{
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+    width: 100%;
+    /* background-color: pink; */
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 4px 6px; */
+    margin-top: 20px;
+}
+
+.section2-item{
+    border: 2px solid brown;
+    border-radius: 23px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+    padding: 23px;
+    background-color: rgb(208, 248, 248);
+}
+
+.section2-item img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0 0;
+    position: relative;
+    z-index: -1;
+
+}
+
+#section3::before{
+    /* background-color: black; */
+    background-image: url('images/background2.jpeg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 480px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.section3-item img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+#section3 h1{ 
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section3-main{
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+    width: 100%;
+    /* background-color: pink; */
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 4px 6px; */
+    margin-top: 10px;
+    margin-bottom: 102px;
+}
+
+.section3-item{
+    /* border: 2px solid brown; */
+    border-radius: 23px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+    padding: 23px;
+    /* background-color: rgb(208, 248, 248); */
+}
+
+#section4::before{
+    /* background-image: url('images/background2.jpeg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-color: rgb(255, 102, 115); */
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#section4{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#section4 h1{ 
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 2.5rem;
+    /* margin-bottom: 20px; */
+}
+
+.section4-main{
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+    width: 100%;
+    /* background-color: pink; */
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 4px 6px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 102px; */
+    /* border: 2px solid black; */
+}
+
+.section4-form{
+    border-radius: 23px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
+    /* margin: 0 15px; */
+    padding: 23px;
+    flex-basis: 50%;
+    /* background-color: pink; */
+    min-height: 300px;
+}
+
+.section4-instructions{
+    border-radius: 23px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
+    margin: 0 15px;
+    padding: 23px;
+    flex-basis: 50%;
+    /* background-color: pink; */
+    min-height: 300px;
+    color: black;
+
+}
+
+.section4-form input{
+        width: 100%;
+        margin: 6px 0;
+        min-height: 35px;
+        border-radius: 23px;
+    text-align: center;
+
+}
+
+.section4-form input::placeholder{
+    text-align: center;
+}
+
+.section4-form input[type='submit']{
+    background-color: red;
+    color: white;
+
+}
+
+.section4-form input[type='submit']:hover{
+    background-color: rgb(236, 127, 127);
+    color: rgb(14, 9, 9);
+    cursor: pointer;
+}

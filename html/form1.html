@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        .container
+        {
+            background-color: rgb(11,22,22);
+        }
+        h1{
+            color: red;
+        }
+
+        .legend
+        {
+            color: red;
+        }
+
+        input
+        {
+            color: white;
+        }
+
+        .table{
+            background-color: rgb(11,22,22);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+            <H1>Admission Form</H1>
+        </center>
+
+        <form action="">
+            <fieldset>
+                <legend class="legend">Admission Form</legend>
+                <center>
+
+                Name: <input type="text" name="" id="" placeholder="Enter Name">
+
+                Father Name: <input type="text" name="" id="">
+
+
+                Email: <input type="email" name="" id="">
+
+
+                Cnic: <input type="number" name="" id="">
+
+
+               <br>
+               <br>
+
+               Select District
+               <select name="" id="">
+                <option value="">Hyderabad</option>
+                <option value="">Tando Muhammad Khan</option>
+                <option value="">Karachi</option>
+               </select>
+
+               Gender <input type="radio" name="gender" value="Male" id=""> Male
+               <input type="radio" name="gender" value="Female" id="">Female
+
+               Languages <input type="checkbox" name="checkbox" value="" id="">Html
+               <input type="checkbox" name="checkbox" value="" id="">CSS
+               <input type="checkbox" name="checkbox" value="" id="">JAVASCRIPT
+               <input type="checkbox" name="checkbox" value="" id="">BOOTSTRAP
+               <input type="checkbox" name="checkbox" value="" id="">PHP
+
+               <br><br>
+               <button type="submit">Submit</button>
+               <button type="reset">Cancel</button>
+                </center>
+
+            </fieldset>
+        </form>
+
+
+    </div>
+
+    <br><br><br>
+
+    <center><h1>Show Student Records</h1></center>
+    <div class="table" >
+        <table border="2" cellspacing="10" cellpadding="10" width="70%" height="40%" align="center">
+            <thead>
+                <tr>
+                    <th>SNO</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>CNIC</th>
+                </tr>
+            </thead>
+
+            <tbody align="center" align="center">
+                <tr>
+                    <td>1</td>
+                    <td>Faisal</td>
+                    <td>faisalawan@gamil.com</td>
+                    <td>4160205492934</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT & CLEAR</title>
+
+    <style>
+        body{
+            background-color: rgba(0,0,0,0.7);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            /* background-color: wheat; */
+            width: 50%;
+            border: 4px solid purple;
+            margin: auto;
+        }
+
+        .item{
+            border: 2px solid black;
+            background-color: aqua;
+            margin: 14px 3px;
+            padding: 14px 3px;
+        }
+
+        h1{
+            color: red;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        #fruit{
+            width: 48%;
+            float: left;
+        }
+
+        #computer{
+            width: 48%;
+            float: left;
+        }
+
+        #glasses{
+            width: 48%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to pace store</h1>
+    <div id="container">
+        <div id="fruit" class="item">
+            <h1>Fruits</h1>
+            <p id="fruitpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima laboriosam dolor provident perspiciatis, vero placeat quaerat labore deserunt, ad architecto, ipsam nobis inventore. Beatae reprehenderit molestias et eum maiores fuga?</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h1>computers</h1>
+            <p id="computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima laboriosam dolor provident perspiciatis, vero placeat quaerat labore deserunt, ad architecto, ipsam nobis inventore. Beatae reprehenderit molestias et eum maiores fuga?</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h1>glassess</h1>
+            <p id="glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima laboriosam dolor provident perspiciatis, vero placeat quaerat labore deserunt, ad architecto, ipsam nobis inventore. Beatae reprehenderit molestias et eum maiores fuga?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+
+    <style>
+        *{
+            list-style: none;
+        }
+        /* this is a element selector  */
+        h1{
+            text-align: center;
+            color: red;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: fantasy;
+            text-decoration: underline;
+        }
+
+        /* div p{
+            width: 50%;
+            height: 20px;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 10px auto;
+            color: red;
+            text-decoration: underline;
+            padding: 20px;
+            text-align: center;
+        } */
+
+        /* div li p{
+            width: 50%;
+            height: 20px;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 10px auto;
+            color: red;
+            text-decoration: underline;
+            padding: 20px;
+            text-align: center;
+            
+        } */
+
+        /* here greater mean directly after div there exists p  */
+        /* div > p{
+            width: 50%;
+            height: 20px;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 10px auto;
+            color: red;
+            text-decoration: underline;
+            padding: 20px;
+            text-align: center;
+        } */
+
+        /* a paragraph that has directly div before  */
+        div + p{
+            width: 50%;
+            height: 20px;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 10px auto;
+            color: red;
+            text-decoration: underline;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Element Selector</h1>
+
+    <div class="container">
+        <ul>
+            <li><p>This is a <big><strong>Li Paragraph</strong></big></p></li>
+            <p>This is <big><strong>Without Li Paragraph</strong></big></p>
+        </ul>
+        <div class="row">
+            <p>This is <big><strong>Row</strong></big> paragraph</p>
+        </div>
+        <!-- <p>This is a <big><strong>Container</strong></big>Paragraph</p> -->
+    </div>
+    <p>This is a <big><strong>No Div</strong></big>Paragraph</p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* overflow: none; */
+}
+
+nav{
+
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    width: 100vw;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar li a{
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+
+#logo{
+    color: red;
+    font-family: fantasy;
+    font-size: 50px;
+    border: 1px solid gray;
+    border-radius: 40%;
+    background-color: rgb(11,22,22);
+}
+
+
+.myclass{
+    /* back?ground-color: rgb(11,22,22); */
+    /* background-image: url('https://cssslider.com/sliders/demo-10/data1/images/2.jpg'); */
+    /* background-image: url('https://secube.hu/wp-content/uploads/2021/08/bg.png'); */
+    background-image: url('coding3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.main{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-head{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    
+}
+
+.main-head h1{
+    font-size: 3.5rem;
+}
+
+.main-head h3{
+    font-size: 2.5rem;
+}
+
+.main-head p{
+    font-size: 3.5rem;
+}
+

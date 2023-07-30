@@ -1,0 +1,13 @@
+flex box
+
+
+display: flex
+flex-direction: row/row-reverse/column/column-reverse
+
+
+justify-content: start/end/center/space-arount/space-between/space-evenly
+
+align-items:
+align-content:
+
+align-self:
